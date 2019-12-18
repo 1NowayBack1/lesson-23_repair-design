@@ -18,10 +18,10 @@ function bs() {
 
 //Sass
 function serveSass() {
-    return src("./sass/*.sass", "./sass/*.scss")
-        .pipe(sass())
-        .pipe(dest("./css"))
-        .pipe(browserSync.stream());
+  return src('src/sass/**/*.sass', 'src/sass/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(dest('src/css'))
+    .pipe(browserSync.stream());
 };
 
 exports.serve = bs;

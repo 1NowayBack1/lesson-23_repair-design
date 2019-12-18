@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <title>My 1st GitHub Page</title>
 </head>
@@ -14,7 +15,7 @@
 
     <header class="header">
       <div class="container">
-        <div class="menu">
+        <div class="menu wow fadeInDown" data-wow-delay="0.2s">
           <div class="logo menu__logo">Repair Design Project</div>
           <nav class="nav menu__nav">
             <a href="#" class="nav__item">Главная</a>
@@ -40,15 +41,15 @@
     <!-- =================Start Hero Section================= -->
     <main>
       <section class="hero">
-        <div class="instagram hero__instagram">
+        <div class="instagram hero__instagram wow pulse" data-wow-delay="0.8s">
           <a href="#" class="instagram__link">Instagram</a>
         </div>
           <div class="container">
             <div class="hero__content">
-              <h1 class="title hero__title">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
-              <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
-              <button class="button hero__button button--primary" data-toggle="modal">Рассчитать стоимость</button>
-              <button class="button hero__button button--outline">Отправить заявку</button>
+              <h1 class="title hero__title wow fadeIn" data-wow-delay="0.7s">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
+              <p class="hero__text wow fadeIn" data-wow-delay="1s">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
+              <button class="button hero__button button--primary wow fadeIn" data-wow-delay="1.3s" data-toggle="modal">Рассчитать стоимость</button>
+              <button class="button hero__button button--outline wow fadeIn" data-wow-delay="1.3s">Отправить заявку</button>
             </div>
             <!-- /.hero__content -->
           </div>
@@ -67,7 +68,6 @@
                 <!-- /.section-title__heading -->
                 <p class="section-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей</p>
               </div>
-              <!-- Slider main container -->
               <!-- Slider main container -->
               <div class="swiper-container">
                   <!-- Additional required wrapper -->
@@ -177,7 +177,7 @@
       <section class="section-control">
         <div class="container">
           <div class="section-title control__section-title section-title--light">
-            <h2 class="section-title__heading">Онлайн контроль</h2>
+            <h2 class="section-title__heading wow fadeInDown" data-wow-delay="0.3">Онлайн контроль</h2>
             <div class="section-title__image">
               <img src="img/video.svg" alt="video">
             </div>
@@ -185,7 +185,7 @@
           </div>
           <!-- /.section-title -->
           <div class="control__video video">
-            <img src="img/control/play-icon.svg" alt="play icon" class="video__play">
+            <img src="img/control/play-icon.svg" alt="play icon" class="video__play wow flip">
           </div>
           <!-- /.control__video -->
           <p class="control__text">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.</p>
@@ -213,7 +213,7 @@
       <section class="section types">
         <div class="container">
           <div class="section-title types__section-title">
-            <h2 class="section-title__heading">Виды ремонта</h2>
+            <h2 class="section-title__heading wow fadeInDown" data-wow-delay="0.3s">Виды ремонта</h2>
             <!-- /.section-title__heading -->
             <div class="section-title__image">
               <img src="img/repair.svg" alt="repair">
@@ -292,7 +292,7 @@
       <!-- =================Start Design Section================= -->
       <section class="section design">
         <div class="container">
-          <div class="section-title design__section-title">
+          <div class="section-title design__section-title wow fadeInDown">
             <h2 class="section-title__heading">Дизайн проект</h2>
             <!-- /.section-title__heading -->
             <div class="section-title__image">
@@ -378,6 +378,10 @@
         <!-- /.container -->
       </section>
      <!-- =================End Design Section================= -->
+
+    <!-- =================Start 6 Steps to Succes  Section================= -->
+     
+    <!-- =================End 6 Steps to Succes  Section================= -->
       <div id="upbutton"></div>
       <!-- /.upbutton -->
     </main>
@@ -406,6 +410,7 @@
     <!-- =================End Modal Section================= -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
